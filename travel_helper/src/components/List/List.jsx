@@ -3,19 +3,7 @@ import { CircularProgress, Grid, Typography, InputLabel, MenuItem, FormControl, 
 import useStyles from './styles';
 import PlaceDetails from '../PlaceDetails/PlaceDetails'
 
-const places = [
-  { name: 'Cool Plcae'},
-  { name: 'Best Beer'},
-  { name: 'Best Steak'},
-  { name: 'Cool Plcae'},
-  { name: 'Best Beer'},
-  { name: 'Best Steak'},
-  { name: 'Cool Plcae'},
-  { name: 'Best Beer'},
-  { name: 'Best Steak'},
-];
-
-const List = () => {
+const List = ({places}) => {
   const classes = useStyles();
   const [type, setType] = useState('restaurants');
   const [rating, setRating] = useState('');
